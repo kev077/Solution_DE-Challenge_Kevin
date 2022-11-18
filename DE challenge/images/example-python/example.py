@@ -5,7 +5,7 @@ import json
 import sqlalchemy
 import pymysql
 # connect to t pymysqlhe database
-engine = sqlalchemy.create_engine("mysql+pymysql://codetest:swordfish@database:3307/codetest")
+engine = sqlalchemy.create_engine("mysql+pymysql://user:swordfish@database:3307/codetest")
 connection = engine.connect()
 
 metadata = sqlalchemy.schema.MetaData(engine)
