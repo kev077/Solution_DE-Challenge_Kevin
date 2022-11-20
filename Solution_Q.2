@@ -6,7 +6,7 @@ CREATE TABLE people
     date_of_birth date,
     place_of_birth varchar(40),
     
-    FOREIGN KEY (`place_of_birth`) REFERENCES places(city)
+    FOREIGN KEY (place_of_birth) REFERENCES places(city)
 )
 
 --To create places table
@@ -29,7 +29,7 @@ LOAD DATA INFILE 'D:/Data/places.csv' INTO TABLE places FIELDS TERMINATED BY ','
 
 
 --Alternative way to load data from csv to respective table
---In MySQL, Right click on respective table(People or Places) and choose 'Table data Import Wizard and select respective csv file(People or Places) to import data to tables.
+--In MySQL, Right click on respective table(people or places) and choose 'Table data Import Wizard and select respective csv file(people or places) to import data to tables.
 
 
 
